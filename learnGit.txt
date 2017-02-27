@@ -3,3 +3,4 @@ Hello My dear
 one more line
 in branch dev
 merge conflict line
+remote dev add line
