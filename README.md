@@ -1,2 +1,2 @@
-# LeanGit
-fro learn git
+# LearnGit
+for learn git
