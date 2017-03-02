@@ -1,3 +1,12 @@
 #操作远程仓库
 git remote set-url --delete nami_test http.*
 git remote set-url --add nami_test http://192.168.200.3/chenfeng/LearnGit.git
+
+#获取commit id
+git rev-parse head
+git rev-parse --short head
+
+#版本回退
+git reset --hard head
+git reset --hard commit id
+git reflog
