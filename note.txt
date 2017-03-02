@@ -10,3 +10,4 @@ git rev-parse --short head
 git reset --hard head
 git reset --hard commit id
 git reflog
+
