@@ -13,3 +13,4 @@ git reflog
 
 #查看提交日志
 git log --pretty=format:"%h %an %ad : %s" -n 5
+
