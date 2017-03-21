@@ -19,3 +19,7 @@ git log --left-right dev...master 不知道谁提交的多谁提交的少，单纯想知道有什么不
 #分支管理
 git checkout -b dev origin/dev，作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
 
+#本地提交并创建远程分支
+git push origin local_branch:remote_branch
+这个操作，local_branch必须为你本地存在的分支，remote_branch为远程分支，如果remote_branch不存在则会自动创建分支。
+类似，git push origin :remote_branch，local_branch留空的话则是删除远程remote_branch分支。
