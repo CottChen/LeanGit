@@ -1,6 +1,7 @@
 #操作远程仓库
 git remote set-url --delete nami_test http.*
 git remote set-url --add nami_test http://192.168.200.3/chenfeng/LearnGit.git
+git remote show origin 显示远程分支等情况
 
 #获取commit id
 git rev-parse head
@@ -13,4 +14,8 @@ git reflog
 
 #查看提交日志
 git log --pretty=format:"%h %an %ad : %s" -n 5
+git log --left-right dev...master 不知道谁提交的多谁提交的少，单纯想知道有什么不一样，再显示出每个提交是在哪个分支上
+
+#分支管理
+git checkout -b dev origin/dev，作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
 
