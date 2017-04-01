@@ -8,9 +8,12 @@ git rev-parse head
 git rev-parse --short head
 
 #版本回退
+add后回退
 git reset --hard head
 git reset --hard commit id
 git reflog
+撤销所有修改
+git checkout .
 
 #查看提交日志
 git log --pretty=format:"%h %an %ad : %s" -n 5
@@ -24,6 +27,8 @@ git logg -n 10
 
 #分支管理
 git checkout -b dev origin/dev，作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
+git fetch remote branch # 远程分支
+git checkout remote/branch src/path # src目录下面的指定目录(没有src指定根目录) 
 
 #本地提交并创建远程分支
 git push origin local_branch:remote_branch
